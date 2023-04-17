@@ -28,3 +28,57 @@ end_activities = pm4py.get_end_activities(log_df)
 
 print("Number of events: {}\nNumber of cases: {}".format(num_events, num_cases))
 print("Start activties: {}\nEnd activities: {}\n".format(start_activities, end_activities))
+
+"""Filtering Data
+
+1.   Cases with null time duration 
+2.   Incomplete cases
+3.   Summarizing the event log
+
+
+"""
+
+# Cases with null time duration
+
+#case_durations = pm4py.get_all_case_durations(log_df)
+#print(case_durations)
+
+case_durations = log_df.groupby('case:concept:name').agg(\
+Events=('case:concept:name', 'count'),\
+FirstOccurence=('time:timestamp', lambda x: x.min()),\
+LastOccurence=('time:timestamp', lambda x: x.max()),\
+Duration=('time:timestamp', lambda x: x.max() - x.min()),                                                    
+)
+
+case_durations
+
+# Do we have cases with null duration 
+
+min_case_duration = case_durations['Duration'].min()
+max_case_duration = case_durations['Duration'].max()
+mean_case_duration = case_durations['Duration'].mean()
+
+print(min_case_duration, max_case_duration, mean_case_duration)
+
+# Filtering cases with duration 0
+
+filtered_log = pm4py.filter_case_performance(log_df, 0, 0)
+
+print(len(filtered_log['case:concept:name'].unique()))
+
+# Let's verify if they are all noise
+
+varaints = pm4py.get_variants(filtered_log)
+
+print(varaints)
+
+filtered_log = pm4py.filter_variants(log_df, [('Create Fine', 'Send Fine')], retain=True)
+filtered_log = pm4py.filter_case_performance(filtered_log, 0, 0)
+
+print(len(filtered_log['case:concept:name'].unique()))
+
+# Let's remove the segment we identified as noise from the event log
+
+log_df = pd.concat([log_df,filtered_log]).drop_duplicates(keep=False)
+
+print(len(log_df['case:concept:name'].unique()))
