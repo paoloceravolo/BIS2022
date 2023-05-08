@@ -1,0 +1,691 @@
+patient,action,resource,datetime
+patient0,First consult,Dr. Anna,2017-01-02 11:40:11
+patient0,Blood test,Lab,2017-01-02 12:47:33
+patient0,Physical test,Nurse Jesse,2017-01-02 12:53:50
+patient0,Second consult,Dr. Anna,2017-01-02 16:21:06
+patient0,Surgery,Dr. Charlie,2017-01-05 13:23:09
+patient0,Final consult,Dr. Ben,2017-01-09 08:29:28
+patient1,First consult,Dr. Anna,2017-01-02 12:50:35
+patient1,Physical test,Nurse Jesse,2017-01-02 13:59:14
+patient1,Blood test,Lab,2017-01-02 14:20:19
+patient1,X-ray scan,Team 1,2017-01-06 09:13:40
+patient1,Second consult,Dr. Anna,2017-01-06 10:38:04
+patient1,Medicine,Pharmacy,2017-01-06 11:47:36
+patient1,Final consult,Dr. Anna,2017-01-06 16:49:21
+patient2,First consult,Dr. Anna,2017-01-04 10:02:49
+patient2,Physical test,Nurse Jesse,2017-01-06 09:05:01
+patient2,X-ray scan,Team 2,2017-01-10 08:05:47
+patient2,Blood test,Lab,2017-01-10 09:12:09
+patient2,Second consult,Dr. Anna,2017-01-12 16:32:00
+patient2,Medicine,Pharmacy,2017-01-13 10:32:51
+patient2,Final consult,Dr. Ben,2017-01-17 11:54:48
+patient3,First consult,Dr. Anna,2017-01-05 16:10:58
+patient3,Blood test,Lab,2017-01-06 08:15:00
+patient3,X-ray scan,Team 2,2017-01-11 11:36:39
+patient3,Physical test,Nurse Corey,2017-01-11 12:38:58
+patient3,Second consult,Dr. Anna,2017-01-13 10:48:35
+patient3,Medicine,Pharmacy,2017-01-13 13:51:21
+patient3,Final consult,Dr. Ben,2017-01-17 13:17:06
+patient4,First consult,Dr. Bob,2017-01-09 12:35:37
+patient4,Blood test,Lab,2017-01-09 13:44:25
+patient4,Physical test,Nurse Corey,2017-01-10 13:49:40
+patient4,X-ray scan,Team 1,2017-01-13 13:39:04
+patient4,Second consult,Dr. Anna,2017-01-18 15:47:58
+patient4,Medicine,Pharmacy,2017-01-19 08:53:27
+patient4,Final consult,Dr. Ben,2017-01-23 08:58:31
+patient5,First consult,Dr. Anna,2017-01-11 09:58:23
+patient5,Physical test,Nurse Jesse,2017-01-11 16:17:39
+patient5,X-ray scan,Team 2,2017-01-11 16:25:11
+patient5,Blood test,Lab,2017-01-11 17:29:14
+patient5,Second consult,Dr. Anna,2017-01-16 13:30:45
+patient5,Surgery,Dr. Rudy,2017-01-19 12:40:02
+patient5,Final consult,Dr. Ben,2017-01-20 12:53:16
+patient6,First consult,Dr. Bob,2017-01-12 17:18:39
+patient6,Physical test,Nurse Jesse,2017-01-12 17:40:43
+patient6,Blood test,Lab,2017-01-13 09:24:02
+patient6,X-ray scan,Team 2,2017-01-18 10:18:48
+patient6,Second consult,Dr. Bob,2017-01-23 14:38:21
+patient6,Surgery,Dr. Rudy,2017-01-25 10:44:05
+patient6,Final consult,Dr. Anna,2017-01-27 12:02:52
+patient7,First consult,Dr. Bob,2017-01-12 17:58:50
+patient7,Physical test,Nurse Jesse,2017-01-13 11:18:57
+patient7,X-ray scan,Team 1,2017-01-17 11:25:26
+patient7,Blood test,Lab,2017-01-17 12:24:28
+patient7,Second consult,Dr. Anna,2017-01-18 10:45:19
+patient7,Medicine,Pharmacy,2017-01-18 12:48:13
+patient7,Final consult,Dr. Anna,2017-01-20 14:11:01
+patient8,First consult,Dr. Bob,2017-01-13 13:24:15
+patient8,X-ray scan,Team 1,2017-01-17 15:27:35
+patient8,Blood test,Lab,2017-01-17 16:10:55
+patient8,Physical test,Nurse Corey,2017-01-17 16:21:03
+patient8,Second consult,Dr. Anna,2017-01-18 14:37:25
+patient8,Medicine,Pharmacy,2017-01-19 08:47:08
+patient8,Final consult,Dr. Ben,2017-01-23 09:07:36
+patient9,First consult,Dr. Bob,2017-01-13 16:49:16
+patient9,Physical test,Nurse Jesse,2017-01-17 15:55:15
+patient9,Blood test,Lab,2017-01-17 16:51:57
+patient9,Second consult,Dr. Anna,2017-01-19 15:01:50
+patient9,Surgery,Dr. Rudy,2017-01-23 15:30:58
+patient9,Final consult,Dr. Ben,2017-01-24 10:52:07
+patient10,First consult,Dr. Anna,2017-01-17 14:13:17
+patient10,Physical test,Nurse Corey,2017-01-18 13:35:24
+patient10,Blood test,Lab,2017-01-18 13:50:11
+patient10,X-ray scan,Team 1,2017-01-23 15:43:03
+patient10,Second consult,Dr. Bob,2017-01-25 14:51:38
+patient10,Medicine,Pharmacy,2017-01-26 09:10:40
+patient10,Final consult,Dr. Ben,2017-01-30 11:19:19
+patient11,First consult,Dr. Bob,2017-01-19 13:35:20
+patient11,Physical test,Nurse Corey,2017-01-19 15:52:24
+patient11,Blood test,Lab,2017-01-19 16:26:25
+patient11,X-ray scan,Team 2,2017-01-20 10:39:39
+patient11,Second consult,Dr. Anna,2017-01-24 14:06:44
+patient11,Surgery,Dr. Alex,2017-01-31 08:07:04
+patient11,Final consult,Dr. Anna,2017-02-02 10:13:13
+patient12,First consult,Dr. Bob,2017-01-20 11:43:38
+patient12,Blood test,Lab,2017-01-20 12:45:10
+patient12,X-ray scan,Team 2,2017-01-23 16:08:16
+patient12,Physical test,Nurse Jesse,2017-01-23 16:48:55
+patient12,Second consult,Dr. Bob,2017-01-26 11:49:02
+patient12,Medicine,Pharmacy,2017-01-26 12:53:26
+patient12,Final consult,Dr. Ben,2017-01-27 11:18:57
+patient13,First consult,Dr. Bob,2017-01-23 15:09:10
+patient13,X-ray scan,Team 2,2017-01-25 12:29:05
+patient13,Physical test,Nurse Jesse,2017-01-25 13:34:31
+patient13,Blood test,Lab,2017-01-25 14:25:04
+patient13,Second consult,Dr. Anna,2017-01-27 12:37:29
+patient13,Medicine,Pharmacy,2017-01-27 14:47:02
+patient13,Final consult,Dr. Ben,2017-01-31 15:49:44
+patient14,First consult,Dr. Bob,2017-01-25 13:13:36
+patient14,Blood test,Lab,2017-01-25 14:17:20
+patient14,X-ray scan,Team 2,2017-01-27 12:20:17
+patient14,Physical test,Nurse Corey,2017-01-27 13:08:46
+patient14,Second consult,Dr. Anna,2017-01-30 12:22:16
+patient14,Medicine,Pharmacy,2017-01-30 14:37:05
+patient14,Final consult,Dr. Anna,2017-02-02 10:52:11
+patient15,First consult,Dr. Anna,2017-01-26 11:23:03
+patient15,Physical test,Nurse Jesse,2017-01-26 14:42:41
+patient15,Blood test,Lab,2017-01-26 14:47:15
+patient15,Second consult,Dr. Anna,2017-01-31 14:11:01
+patient15,Medicine,Pharmacy,2017-01-31 16:15:51
+patient15,Final consult,Dr. Anna,2017-02-03 09:18:04
+patient16,First consult,Dr. Anna,2017-01-26 16:47:05
+patient16,Physical test,Nurse Jesse,2017-01-27 14:10:15
+patient16,Blood test,Lab,2017-01-27 14:58:11
+patient16,X-ray scan,Team 1,2017-02-01 11:49:28
+patient16,Second consult,Dr. Bob,2017-02-06 09:11:56
+patient16,Medicine,Pharmacy,2017-02-06 10:31:45
+patient16,Final consult,Dr. Ben,2017-02-07 08:55:43
+patient17,First consult,Dr. Bob,2017-01-27 12:02:23
+patient17,Physical test,Nurse Corey,2017-01-30 16:25:12
+patient17,X-ray scan,Team 2,2017-02-02 12:23:06
+patient17,Blood test,Lab,2017-02-02 13:16:01
+patient17,Second consult,Dr. Bob,2017-02-08 09:18:46
+patient17,Medicine,Pharmacy,2017-02-08 12:38:03
+patient17,Final consult,Dr. Ben,2017-02-09 12:46:25
+patient18,First consult,Dr. Bob,2017-01-30 13:24:38
+patient18,X-ray scan,Team 2,2017-01-31 15:35:41
+patient18,Blood test,Lab,2017-01-31 15:51:55
+patient18,Physical test,Nurse Jesse,2017-01-31 16:19:59
+patient18,Second consult,Dr. Anna,2017-02-03 15:42:28
+patient18,Medicine,Pharmacy,2017-02-06 08:59:22
+patient18,Final consult,Dr. Ben,2017-02-07 10:13:20
+patient19,First consult,Dr. Anna,2017-01-31 11:39:22
+patient19,Blood test,Lab,2017-01-31 12:55:08
+patient19,X-ray scan,Team 2,2017-02-03 11:09:17
+patient19,Physical test,Nurse Corey,2017-02-03 11:31:52
+patient19,Second consult,Dr. Bob,2017-02-08 12:00:35
+patient19,Medicine,Pharmacy,2017-02-08 13:12:06
+patient19,Final consult,Dr. Ben,2017-02-10 09:34:06
+patient20,First consult,Dr. Anna,2017-02-01 13:54:11
+patient20,Blood test,Lab,2017-02-01 15:08:31
+patient20,Physical test,Nurse Jesse,2017-02-02 11:04:38
+patient20,X-ray scan,Team 1,2017-02-03 15:59:58
+patient20,Second consult,Dr. Bob,2017-02-08 09:23:33
+patient20,Medicine,Pharmacy,2017-02-08 10:48:10
+patient20,Final consult,Dr. Anna,2017-02-09 15:48:55
+patient21,First consult,Dr. Bob,2017-02-02 14:06:22
+patient21,X-ray scan,Team 2,2017-02-06 11:07:50
+patient21,Blood test,Lab,2017-02-06 11:27:48
+patient21,Physical test,Nurse Jesse,2017-02-06 11:42:09
+patient21,Second consult,Dr. Anna,2017-02-09 12:09:11
+patient21,Surgery,Dr. Charlie,2017-02-13 14:24:28
+patient21,Final consult,Dr. Anna,2017-02-14 09:35:22
+patient22,First consult,Dr. Bob,2017-02-06 10:25:17
+patient22,Blood test,Lab,2017-02-06 11:38:00
+patient22,Physical test,Nurse Jesse,2017-02-07 13:38:55
+patient22,X-ray scan,Team 1,2017-02-10 15:32:09
+patient22,Second consult,Dr. Anna,2017-02-15 15:52:53
+patient22,Medicine,Pharmacy,2017-02-16 09:18:00
+patient22,Final consult,Dr. Ben,2017-02-16 13:25:47
+patient23,First consult,Dr. Anna,2017-02-07 11:49:06
+patient23,X-ray scan,Team 2,2017-02-08 09:56:27
+patient23,Blood test,Lab,2017-02-08 10:07:43
+patient23,Physical test,Nurse Corey,2017-02-08 11:55:36
+patient23,Second consult,Dr. Bob,2017-02-13 16:12:01
+patient23,Surgery,Dr. Alex,2017-02-20 15:19:54
+patient23,Final consult,Dr. Anna,2017-02-23 11:30:26
+patient24,First consult,Dr. Bob,2017-02-08 12:08:50
+patient24,Blood test,Lab,2017-02-08 13:28:41
+patient24,Physical test,Nurse Corey,2017-02-10 08:24:23
+patient24,X-ray scan,Team 1,2017-02-10 09:59:48
+patient24,Second consult,Dr. Anna,2017-02-14 10:22:13
+patient24,Medicine,Pharmacy,2017-02-14 12:37:44
+patient24,Final consult,Dr. Anna,2017-02-14 15:44:39
+patient25,First consult,Dr. Bob,2017-02-08 14:30:20
+patient25,Physical test,Nurse Corey,2017-02-09 12:40:44
+patient25,Blood test,Lab,2017-02-09 13:31:11
+patient25,Second consult,Dr. Bob,2017-02-09 14:31:47
+patient25,Medicine,Pharmacy,2017-02-10 08:46:47
+patient25,Final consult,Dr. Ben,2017-02-13 10:54:46
+patient26,First consult,Dr. Bob,2017-02-10 08:45:27
+patient26,X-ray scan,Team 2,2017-02-14 10:47:38
+patient26,Physical test,Nurse Jesse,2017-02-14 11:15:21
+patient26,Blood test,Lab,2017-02-14 12:36:13
+patient26,Second consult,Dr. Anna,2017-02-15 10:58:39
+patient26,Medicine,Pharmacy,2017-02-15 12:07:00
+patient26,Final consult,Dr. Ben,2017-02-17 15:15:51
+patient27,First consult,Dr. Bob,2017-02-10 10:07:44
+patient27,Physical test,Nurse Corey,2017-02-13 14:15:25
+patient27,Blood test,Lab,2017-02-13 15:06:58
+patient27,Second consult,Dr. Bob,2017-02-15 15:27:16
+patient27,Surgery,Dr. Quinn,2017-02-17 13:32:48
+patient27,Final consult,Dr. Anna,2017-02-17 14:45:21
+patient28,First consult,Dr. Bob,2017-02-10 16:32:01
+patient28,Blood test,Lab,2017-02-13 08:48:23
+patient28,Physical test,Nurse Corey,2017-02-13 10:13:27
+patient28,X-ray scan,Team 2,2017-02-17 14:00:06
+patient28,Second consult,Dr. Anna,2017-02-20 16:18:50
+patient28,Medicine,Pharmacy,2017-02-21 10:44:42
+patient28,Final consult,Dr. Ben,2017-02-22 13:45:13
+patient29,First consult,Dr. Bob,2017-02-13 16:54:28
+patient29,Blood test,Lab,2017-02-14 09:01:47
+patient29,Physical test,Nurse Jesse,2017-02-15 10:02:05
+patient29,Second consult,Dr. Anna,2017-02-20 16:21:52
+patient29,Medicine,Pharmacy,2017-02-21 08:22:46
+patient29,Final consult,Dr. Anna,2017-02-22 11:42:21
+patient30,First consult,Dr. Bob,2017-02-14 15:55:26
+patient30,Blood test,Lab,2017-02-14 17:22:32
+patient30,Physical test,Nurse Corey,2017-02-15 14:05:13
+patient30,X-ray scan,Team 1,2017-02-15 14:13:11
+patient30,Second consult,Dr. Bob,2017-02-17 12:22:36
+patient30,Medicine,Pharmacy,2017-02-17 13:41:15
+patient30,Final consult,Dr. Anna,2017-02-21 17:00:10
+patient31,First consult,Dr. Anna,2017-02-15 10:56:47
+patient31,X-ray scan,Team 2,2017-02-16 11:26:26
+patient31,Physical test,Nurse Jesse,2017-02-16 11:55:52
+patient31,Blood test,Lab,2017-02-16 12:22:32
+patient31,Second consult,Dr. Anna,2017-02-20 11:47:14
+patient31,Medicine,Pharmacy,2017-02-20 14:00:52
+patient31,Final consult,Dr. Ben,2017-02-22 10:30:39
+patient32,First consult,Dr. Anna,2017-02-16 17:09:32
+patient32,X-ray scan,Team 2,2017-02-17 11:13:41
+patient32,Blood test,Lab,2017-02-17 11:27:14
+patient32,Physical test,Nurse Corey,2017-02-17 12:42:23
+patient32,Second consult,Dr. Bob,2017-02-21 09:50:52
+patient32,Medicine,Pharmacy,2017-02-21 12:54:29
+patient32,Final consult,Dr. Anna,2017-02-23 08:56:17
+patient33,First consult,Dr. Anna,2017-02-17 15:27:23
+patient33,Physical test,Nurse Jesse,2017-02-20 08:43:18
+patient33,Blood test,Lab,2017-02-20 10:09:21
+patient33,X-ray scan,Team 1,2017-02-22 08:29:29
+patient33,Second consult,Dr. Bob,2017-02-23 08:45:32
+patient33,Surgery,Dr. Alex,2017-02-23 17:13:41
+patient33,Final consult,Dr. Anna,2017-02-27 08:21:38
+patient34,First consult,Dr. Anna,2017-02-20 10:46:53
+patient34,Blood test,Lab,2017-02-20 12:13:18
+patient34,Physical test,Nurse Jesse,2017-02-21 16:06:06
+patient34,X-ray scan,Team 2,2017-02-21 16:54:44
+patient34,Second consult,Dr. Anna,2017-02-27 15:03:21
+patient34,Medicine,Pharmacy,2017-02-28 09:10:28
+patient34,Final consult,Dr. Anna,2017-03-02 13:24:27
+patient35,First consult,Dr. Anna,2017-02-20 17:09:45
+patient35,Blood test,Lab,2017-02-20 18:13:03
+patient35,Physical test,Nurse Corey,2017-02-21 10:38:45
+patient35,Second consult,Dr. Bob,2017-02-22 16:53:58
+patient35,Medicine,Pharmacy,2017-02-23 10:22:22
+patient35,Final consult,Dr. Ben,2017-02-23 14:36:45
+patient36,First consult,Dr. Anna,2017-02-21 07:31:07
+patient36,Physical test,Nurse Jesse,2017-02-21 11:43:22
+patient36,X-ray scan,Team 2,2017-02-23 10:44:09
+patient36,Blood test,Lab,2017-02-23 11:09:43
+patient36,Second consult,Dr. Anna,2017-02-24 15:15:52
+patient36,Surgery,Dr. Quinn,2017-02-27 15:15:53
+patient36,Final consult,Dr. Anna,2017-03-02 08:18:02
+patient37,First consult,Dr. Bob,2017-02-22 11:41:54
+patient37,X-ray scan,Team 2,2017-02-28 17:01:18
+patient37,Blood test,Lab,2017-02-28 17:24:35
+patient37,Physical test,Nurse Corey,2017-03-01 09:29:14
+patient37,Second consult,Dr. Bob,2017-03-06 14:34:40
+patient37,Medicine,Pharmacy,2017-03-07 08:55:50
+patient37,Final consult,Dr. Ben,2017-03-09 12:22:03
+patient38,First consult,Dr. Anna,2017-02-24 10:04:44
+patient38,Blood test,Lab,2017-02-24 11:33:34
+patient38,X-ray scan,Team 1,2017-02-27 15:25:30
+patient38,Physical test,Nurse Jesse,2017-02-27 16:05:27
+patient38,Second consult,Dr. Anna,2017-03-02 15:26:48
+patient38,Medicine,Pharmacy,2017-03-03 08:43:29
+patient38,Final consult,Dr. Anna,2017-03-07 10:52:38
+patient39,First consult,Dr. Bob,2017-02-27 13:18:06
+patient39,Blood test,Lab,2017-02-27 14:37:41
+patient39,X-ray scan,Team 2,2017-02-27 16:46:01
+patient39,Physical test,Nurse Jesse,2017-02-28 16:34:18
+patient39,Second consult,Dr. Anna,2017-03-01 10:57:57
+patient39,Medicine,Pharmacy,2017-03-01 13:21:33
+patient39,Final consult,Dr. Anna,2017-03-02 12:32:44
+patient40,First consult,Dr. Bob,2017-02-28 12:37:53
+patient40,Physical test,Nurse Corey,2017-03-01 13:01:02
+patient40,Blood test,Lab,2017-03-01 13:49:56
+patient40,X-ray scan,Team 2,2017-03-01 14:32:05
+patient40,Second consult,Dr. Anna,2017-03-02 14:32:32
+patient40,Surgery,Dr. Quinn,2017-03-03 14:48:00
+patient40,Final consult,Dr. Ben,2017-03-03 16:17:10
+patient41,First consult,Dr. Anna,2017-02-28 14:00:26
+patient41,X-ray scan,Team 2,2017-03-02 10:28:00
+patient41,Physical test,Nurse Corey,2017-03-02 13:15:38
+patient41,Blood test,Lab,2017-03-02 14:09:52
+patient41,Second consult,Dr. Bob,2017-03-03 14:10:57
+patient41,Medicine,Pharmacy,2017-03-03 16:34:57
+patient41,Final consult,Dr. Anna,2017-03-07 15:45:53
+patient42,First consult,Dr. Anna,2017-03-02 11:06:48
+patient42,Blood test,Lab,2017-03-02 12:32:35
+patient42,Physical test,Nurse Jesse,2017-03-03 09:13:02
+patient42,Second consult,Dr. Bob,2017-03-07 09:34:28
+patient42,Medicine,Pharmacy,2017-03-07 12:42:26
+patient42,Final consult,Dr. Ben,2017-03-09 15:57:09
+patient43,First consult,Dr. Anna,2017-03-02 14:32:58
+patient43,Blood test,Lab,2017-03-02 15:34:37
+patient43,X-ray scan,Team 2,2017-03-03 15:53:48
+patient43,Physical test,Nurse Corey,2017-03-06 08:53:20
+patient43,Second consult,Dr. Bob,2017-03-07 16:22:55
+patient43,Medicine,Pharmacy,2017-03-08 08:39:52
+patient43,Final consult,Dr. Anna,2017-03-09 15:01:51
+patient44,First consult,Dr. Anna,2017-03-06 11:37:40
+patient44,Blood test,Lab,2017-03-06 12:51:40
+patient44,Physical test,Nurse Jesse,2017-03-06 14:07:06
+patient44,X-ray scan,Team 1,2017-03-08 15:57:26
+patient44,Second consult,Dr. Bob,2017-03-10 14:12:50
+patient44,Medicine,Pharmacy,2017-03-13 08:37:05
+patient44,Final consult,Dr. Anna,2017-03-15 10:55:33
+patient45,First consult,Dr. Bob,2017-03-07 13:06:04
+patient45,Physical test,Nurse Jesse,2017-03-08 09:18:16
+patient45,Blood test,Lab,2017-03-08 09:29:00
+patient45,X-ray scan,Team 2,2017-03-13 14:29:16
+patient45,Second consult,Dr. Anna,2017-03-17 12:48:08
+patient45,Medicine,Pharmacy,2017-03-17 16:02:52
+patient45,Final consult,Dr. Anna,2017-03-20 12:32:46
+patient46,First consult,Dr. Anna,2017-03-08 10:07:29
+patient46,Physical test,Nurse Corey,2017-03-09 09:25:38
+patient46,Blood test,Lab,2017-03-09 09:43:06
+patient46,X-ray scan,Team 2,2017-03-13 11:09:48
+patient46,Second consult,Dr. Anna,2017-03-15 15:22:45
+patient46,Medicine,Pharmacy,2017-03-15 16:49:38
+patient46,Final consult,Dr. Anna,2017-03-20 11:10:16
+patient47,First consult,Dr. Anna,2017-03-10 09:27:44
+patient47,X-ray scan,Team 1,2017-03-16 11:37:27
+patient47,Blood test,Lab,2017-03-16 11:56:43
+patient47,Physical test,Nurse Jesse,2017-03-16 12:21:37
+patient47,Second consult,Dr. Anna,2017-03-21 16:24:41
+patient47,Surgery,Dr. Alex,2017-03-23 14:44:57
+patient47,Final consult,Dr. Anna,2017-03-27 12:10:48
+patient48,First consult,Dr. Anna,2017-03-10 16:51:31
+patient48,X-ray scan,Team 2,2017-03-13 12:06:22
+patient48,Blood test,Lab,2017-03-13 12:59:29
+patient48,Physical test,Nurse Corey,2017-03-13 14:04:39
+patient48,Second consult,Dr. Anna,2017-03-13 15:14:44
+patient48,Medicine,Pharmacy,2017-03-13 16:40:09
+patient48,Final consult,Dr. Ben,2017-03-15 14:51:56
+patient49,First consult,Dr. Bob,2017-03-13 10:20:01
+patient49,Physical test,Nurse Corey,2017-03-14 15:48:49
+patient49,X-ray scan,Team 2,2017-03-16 08:33:34
+patient49,Blood test,Lab,2017-03-16 09:24:14
+patient49,Second consult,Dr. Bob,2017-03-20 09:35:56
+patient49,Medicine,Pharmacy,2017-03-20 10:42:23
+patient49,Final consult,Dr. Ben,2017-03-22 15:43:30
+patient50,First consult,Dr. Bob,2017-03-14 12:46:07
+patient50,Blood test,Lab,2017-03-14 14:12:15
+patient50,X-ray scan,Team 1,2017-03-20 10:55:04
+patient50,Physical test,Nurse Jesse,2017-03-20 11:13:52
+patient50,Second consult,Dr. Bob,2017-03-22 15:38:58
+patient50,Medicine,Pharmacy,2017-03-23 10:08:32
+patient50,Final consult,Dr. Anna,2017-03-27 09:18:42
+patient51,First consult,Dr. Anna,2017-03-15 14:48:17
+patient51,Blood test,Lab,2017-03-15 16:05:37
+patient51,Physical test,Nurse Corey,2017-03-16 14:56:52
+patient51,X-ray scan,Team 2,2017-03-17 15:59:13
+patient51,Second consult,Dr. Bob,2017-03-23 10:18:36
+patient51,Medicine,Pharmacy,2017-03-23 12:23:03
+patient51,Final consult,Dr. Anna,2017-03-27 11:26:38
+patient52,First consult,Dr. Bob,2017-03-16 12:56:35
+patient52,Physical test,Nurse Jesse,2017-03-17 15:04:05
+patient52,Blood test,Lab,2017-03-17 15:08:07
+patient52,Second consult,Dr. Anna,2017-03-22 15:11:45
+patient52,Medicine,Pharmacy,2017-03-22 16:34:19
+patient52,Final consult,Dr. Ben,2017-03-23 13:38:57
+patient53,First consult,Dr. Anna,2017-03-20 11:01:55
+patient53,X-ray scan,Team 1,2017-03-24 10:31:48
+patient53,Physical test,Nurse Corey,2017-03-24 11:02:39
+patient53,Blood test,Lab,2017-03-24 11:08:22
+patient53,Second consult,Dr. Anna,2017-03-27 14:25:23
+patient53,Medicine,Pharmacy,2017-03-27 16:33:46
+patient53,Final consult,Dr. Ben,2017-03-29 15:44:35
+patient54,First consult,Dr. Bob,2017-03-21 08:04:08
+patient54,Blood test,Lab,2017-03-21 09:30:54
+patient54,X-ray scan,Team 1,2017-03-22 08:30:11
+patient54,Physical test,Nurse Jesse,2017-03-22 09:37:41
+patient54,Second consult,Dr. Anna,2017-03-22 16:44:21
+patient54,Medicine,Pharmacy,2017-03-23 08:58:13
+patient54,Final consult,Dr. Anna,2017-03-24 15:11:19
+patient55,First consult,Dr. Anna,2017-03-22 09:18:12
+patient55,Blood test,Lab,2017-03-22 10:26:31
+patient55,Physical test,Nurse Corey,2017-03-23 10:26:10
+patient55,X-ray scan,Team 1,2017-03-23 10:57:34
+patient55,Second consult,Dr. Anna,2017-03-27 12:04:01
+patient55,Medicine,Pharmacy,2017-03-27 15:30:24
+patient55,Final consult,Dr. Ben,2017-03-27 16:44:53
+patient56,First consult,Dr. Anna,2017-03-23 10:22:44
+patient56,Physical test,Nurse Corey,2017-03-23 11:38:33
+patient56,X-ray scan,Team 2,2017-03-24 14:52:02
+patient56,Blood test,Lab,2017-03-24 15:14:38
+patient56,Second consult,Dr. Anna,2017-03-29 14:34:09
+patient56,Medicine,Pharmacy,2017-03-29 15:48:49
+patient56,Final consult,Dr. Anna,2017-04-03 10:12:54
+patient57,First consult,Dr. Bob,2017-03-27 08:34:57
+patient57,Blood test,Lab,2017-03-27 09:38:41
+patient57,X-ray scan,Team 1,2017-03-30 14:03:38
+patient57,Physical test,Nurse Jesse,2017-03-30 15:03:25
+patient57,Second consult,Dr. Bob,2017-03-31 11:30:47
+patient57,Medicine,Pharmacy,2017-03-31 12:53:19
+patient57,Final consult,Dr. Ben,2017-03-31 15:07:30
+patient58,First consult,Dr. Anna,2017-03-27 13:52:39
+patient58,X-ray scan,Team 1,2017-04-03 08:57:57
+patient58,Physical test,Nurse Jesse,2017-04-03 10:11:53
+patient58,Blood test,Lab,2017-04-03 10:52:39
+patient58,Second consult,Dr. Bob,2017-04-06 16:08:52
+patient58,Medicine,Pharmacy,2017-04-07 08:36:16
+patient58,Final consult,Dr. Ben,2017-04-11 09:43:09
+patient59,First consult,Dr. Bob,2017-03-28 11:19:41
+patient59,X-ray scan,Team 1,2017-03-31 09:37:25
+patient59,Blood test,Lab,2017-03-31 09:38:03
+patient59,Physical test,Nurse Jesse,2017-03-31 10:39:05
+patient59,Second consult,Dr. Anna,2017-04-04 10:01:13
+patient59,Medicine,Pharmacy,2017-04-04 12:27:42
+patient59,Final consult,Dr. Anna,2017-04-05 10:36:17
+patient60,First consult,Dr. Bob,2017-03-30 08:24:53
+patient60,Blood test,Lab,2017-03-30 09:43:26
+patient60,X-ray scan,Team 1,2017-03-31 14:33:03
+patient60,Physical test,Nurse Jesse,2017-03-31 14:45:43
+patient60,Second consult,Dr. Anna,2017-04-03 11:15:35
+patient60,Medicine,Pharmacy,2017-04-03 12:22:29
+patient60,Final consult,Dr. Ben,2017-04-05 13:32:12
+patient61,First consult,Dr. Anna,2017-03-30 13:51:15
+patient61,X-ray scan,Team 2,2017-03-31 13:56:19
+patient61,Physical test,Nurse Corey,2017-04-03 12:06:01
+patient61,Blood test,Lab,2017-04-03 12:10:32
+patient61,Second consult,Dr. Bob,2017-04-03 13:28:51
+patient61,Medicine,Pharmacy,2017-04-03 15:50:08
+patient61,Final consult,Dr. Ben,2017-04-05 16:17:27
+patient62,First consult,Dr. Bob,2017-03-30 15:19:58
+patient62,X-ray scan,Team 2,2017-04-06 08:46:50
+patient62,Physical test,Nurse Jesse,2017-04-06 09:23:02
+patient62,Blood test,Lab,2017-04-06 09:46:45
+patient62,Second consult,Dr. Bob,2017-04-06 11:51:33
+patient62,Surgery,Dr. Charlie,2017-04-11 11:04:19
+patient62,Final consult,Dr. Anna,2017-04-12 15:21:36
+patient63,First consult,Dr. Bob,2017-03-31 15:33:44
+patient63,X-ray scan,Team 1,2017-04-05 11:40:47
+patient63,Physical test,Nurse Jesse,2017-04-05 12:02:35
+patient63,Blood test,Lab,2017-04-05 12:22:24
+patient63,Second consult,Dr. Anna,2017-04-10 12:38:16
+patient63,Medicine,Pharmacy,2017-04-10 15:05:55
+patient63,Final consult,Dr. Ben,2017-04-11 16:13:50
+patient64,First consult,Dr. Anna,2017-04-03 15:58:35
+patient64,Blood test,Lab,2017-04-03 17:05:40
+patient64,Physical test,Nurse Corey,2017-04-04 13:14:10
+patient64,X-ray scan,Team 2,2017-04-06 12:22:58
+patient64,Second consult,Dr. Anna,2017-04-11 14:40:44
+patient64,Surgery,Dr. Rudy,2017-04-17 15:44:09
+patient64,Final consult,Dr. Anna,2017-04-20 10:09:25
+patient65,First consult,Dr. Bob,2017-04-04 17:27:35
+patient65,Physical test,Nurse Jesse,2017-04-05 08:47:20
+patient65,X-ray scan,Team 1,2017-04-06 08:29:12
+patient65,Blood test,Lab,2017-04-06 09:49:02
+patient65,Second consult,Dr. Bob,2017-04-10 09:18:14
+patient65,Medicine,Pharmacy,2017-04-10 10:37:42
+patient65,Final consult,Dr. Ben,2017-04-11 08:57:53
+patient66,First consult,Dr. Anna,2017-04-05 07:36:40
+patient66,Blood test,Lab,2017-04-05 08:44:30
+patient66,Physical test,Nurse Jesse,2017-04-06 14:52:08
+patient66,X-ray scan,Team 1,2017-04-06 16:01:42
+patient66,Second consult,Dr. Bob,2017-04-12 10:28:57
+patient66,Medicine,Pharmacy,2017-04-12 12:38:39
+patient66,Final consult,Dr. Anna,2017-04-14 14:03:32
+patient67,First consult,Dr. Anna,2017-04-06 10:49:36
+patient67,Physical test,Nurse Jesse,2017-04-10 09:05:40
+patient67,Blood test,Lab,2017-04-10 09:44:17
+patient67,X-ray scan,Team 1,2017-04-10 15:10:51
+patient67,Second consult,Dr. Anna,2017-04-14 10:35:55
+patient67,Medicine,Pharmacy,2017-04-14 13:57:12
+patient67,Final consult,Dr. Ben,2017-04-17 13:00:11
+patient68,First consult,Dr. Anna,2017-04-06 13:00:35
+patient68,Physical test,Nurse Corey,2017-04-07 13:26:40
+patient68,X-ray scan,Team 2,2017-04-11 12:02:48
+patient68,Blood test,Lab,2017-04-11 13:03:03
+patient68,Second consult,Dr. Bob,2017-04-11 15:13:29
+patient68,Medicine,Pharmacy,2017-04-11 16:14:59
+patient68,Final consult,Dr. Ben,2017-04-13 10:23:00
+patient69,First consult,Dr. Bob,2017-04-07 16:25:52
+patient69,X-ray scan,Team 2,2017-04-13 12:27:18
+patient69,Physical test,Nurse Jesse,2017-04-13 13:18:56
+patient69,Blood test,Lab,2017-04-13 13:55:40
+patient69,Second consult,Dr. Anna,2017-04-14 16:16:24
+patient69,Medicine,Pharmacy,2017-04-17 10:40:26
+patient69,Final consult,Dr. Ben,2017-04-17 12:47:07
+patient70,First consult,Dr. Anna,2017-04-10 09:39:16
+patient70,X-ray scan,Team 1,2017-04-14 08:56:27
+patient70,Blood test,Lab,2017-04-14 10:06:16
+patient70,Physical test,Nurse Jesse,2017-04-14 10:40:59
+patient70,Second consult,Dr. Bob,2017-04-14 14:44:23
+patient70,Medicine,Pharmacy,2017-04-17 09:06:45
+patient70,Final consult,Dr. Ben,2017-04-18 09:31:56
+patient71,First consult,Dr. Anna,2017-04-10 16:07:38
+patient71,X-ray scan,Team 1,2017-04-14 13:26:27
+patient71,Blood test,Lab,2017-04-14 13:58:12
+patient71,Physical test,Nurse Corey,2017-04-14 14:07:20
+patient71,Second consult,Dr. Anna,2017-04-19 09:36:27
+patient71,Medicine,Pharmacy,2017-04-19 11:01:49
+patient71,Final consult,Dr. Anna,2017-04-20 15:26:01
+patient72,First consult,Dr. Anna,2017-04-12 15:24:05
+patient72,Blood test,Lab,2017-04-12 16:53:23
+patient72,X-ray scan,Team 1,2017-04-19 13:28:47
+patient72,Physical test,Nurse Corey,2017-04-19 13:32:15
+patient72,Second consult,Dr. Anna,2017-04-25 10:47:51
+patient72,Medicine,Pharmacy,2017-04-25 13:57:41
+patient72,Final consult,Dr. Anna,2017-04-26 09:11:57
+patient73,First consult,Dr. Bob,2017-04-13 14:27:05
+patient73,Physical test,Nurse Jesse,2017-04-17 08:28:27
+patient73,Blood test,Lab,2017-04-17 09:49:53
+patient73,X-ray scan,Team 2,2017-04-18 10:39:47
+patient73,Second consult,Dr. Anna,2017-04-19 16:54:24
+patient73,Medicine,Pharmacy,2017-04-20 09:01:26
+patient73,Final consult,Dr. Ben,2017-04-24 13:17:24
+patient74,First consult,Dr. Anna,2017-04-17 12:47:57
+patient74,Physical test,Nurse Jesse,2017-04-19 10:03:09
+patient74,Blood test,Lab,2017-04-19 11:15:41
+patient74,X-ray scan,Team 2,2017-04-21 12:51:43
+patient74,Second consult,Dr. Bob,2017-04-25 11:58:24
+patient74,Medicine,Pharmacy,2017-04-25 14:22:28
+patient74,Final consult,Dr. Anna,2017-04-26 08:50:55
+patient75,First consult,Dr. Bob,2017-04-18 15:51:31
+patient75,Blood test,Lab,2017-04-18 17:03:08
+patient75,Physical test,Nurse Jesse,2017-04-19 17:19:04
+patient75,X-ray scan,Team 2,2017-04-20 13:09:54
+patient75,Second consult,Dr. Bob,2017-04-21 11:20:06
+patient75,Medicine,Pharmacy,2017-04-21 12:40:54
+patient75,Final consult,Dr. Anna,2017-04-25 15:04:02
+patient76,First consult,Dr. Bob,2017-04-19 10:52:43
+patient76,Blood test,Lab,2017-04-19 12:21:40
+patient76,X-ray scan,Team 1,2017-04-19 14:05:24
+patient76,Physical test,Nurse Corey,2017-04-19 14:40:28
+patient76,Second consult,Dr. Anna,2017-04-19 15:59:10
+patient76,Medicine,Pharmacy,2017-04-19 17:14:14
+patient76,Final consult,Dr. Ben,2017-04-20 12:26:47
+patient77,First consult,Dr. Anna,2017-04-19 14:08:33
+patient77,Blood test,Lab,2017-04-19 15:08:42
+patient77,X-ray scan,Team 2,2017-04-24 14:28:47
+patient77,Physical test,Nurse Jesse,2017-04-24 15:49:05
+patient77,Second consult,Dr. Anna,2017-04-26 16:11:56
+patient77,Medicine,Pharmacy,2017-04-27 09:41:01
+patient77,Final consult,Dr. Anna,2017-04-28 14:55:23
+patient78,First consult,Dr. Bob,2017-04-20 14:27:40
+patient78,Physical test,Nurse Corey,2017-04-24 09:49:46
+patient78,X-ray scan,Team 2,2017-04-24 10:40:46
+patient78,Blood test,Lab,2017-04-24 10:59:40
+patient78,Second consult,Dr. Bob,2017-04-27 10:15:18
+patient78,Surgery,Dr. Rudy,2017-05-03 16:22:39
+patient78,Final consult,Dr. Anna,2017-05-05 09:45:51
+patient79,First consult,Dr. Bob,2017-04-21 13:41:51
+patient79,Blood test,Lab,2017-04-21 14:42:00
+patient79,X-ray scan,Team 1,2017-04-27 15:05:45
+patient79,Physical test,Nurse Jesse,2017-04-27 15:39:25
+patient79,Second consult,Dr. Bob,2017-05-01 12:02:01
+patient79,Medicine,Pharmacy,2017-05-01 15:24:50
+patient79,Final consult,Dr. Ben,2017-05-03 10:49:42
+patient80,First consult,Dr. Bob,2017-04-21 15:10:39
+patient80,X-ray scan,Team 2,2017-04-27 14:39:13
+patient80,Physical test,Nurse Corey,2017-04-27 15:10:26
+patient80,Blood test,Lab,2017-04-27 15:55:35
+patient80,Second consult,Dr. Bob,2017-04-28 13:14:54
+patient80,Medicine,Pharmacy,2017-04-28 16:17:29
+patient80,Final consult,Dr. Anna,2017-05-01 13:19:23
+patient81,First consult,Dr. Anna,2017-04-25 10:28:13
+patient81,Blood test,Lab,2017-04-25 11:57:57
+patient81,X-ray scan,Team 2,2017-04-26 10:44:51
+patient81,Physical test,Nurse Jesse,2017-04-26 10:53:47
+patient81,Second consult,Dr. Bob,2017-04-28 09:55:38
+patient81,Medicine,Pharmacy,2017-04-28 12:07:52
+patient81,Final consult,Dr. Ben,2017-05-01 13:37:20
+patient82,First consult,Dr. Anna,2017-04-25 13:36:18
+patient82,X-ray scan,Team 2,2017-04-26 11:42:00
+patient82,Physical test,Nurse Corey,2017-04-26 14:01:00
+patient82,Blood test,Lab,2017-04-26 15:00:04
+patient82,Second consult,Dr. Bob,2017-05-01 13:02:09
+patient82,Medicine,Pharmacy,2017-05-01 14:19:59
+patient82,Final consult,Dr. Ben,2017-05-02 15:28:53
+patient83,First consult,Dr. Bob,2017-04-25 15:36:24
+patient83,X-ray scan,Team 1,2017-05-01 16:42:06
+patient83,Blood test,Lab,2017-05-01 18:01:47
+patient83,Physical test,Nurse Jesse,2017-05-02 10:00:43
+patient83,Second consult,Dr. Bob,2017-05-05 10:13:37
+patient83,Surgery,Dr. Charlie,2017-05-10 16:13:37
+patient83,Final consult,Dr. Anna,2017-05-12 13:24:42
+patient84,First consult,Dr. Bob,2017-04-27 13:43:32
+patient84,Blood test,Lab,2017-04-27 14:45:42
+patient84,X-ray scan,Team 1,2017-05-03 09:50:47
+patient84,Physical test,Nurse Corey,2017-05-03 10:37:58
+patient84,Second consult,Dr. Anna,2017-05-08 10:06:31
+patient84,Medicine,Pharmacy,2017-05-08 13:16:21
+patient84,Final consult,Dr. Anna,2017-05-09 16:37:13
+patient85,First consult,Dr. Bob,2017-04-28 16:09:52
+patient85,Physical test,Nurse Jesse,2017-05-01 10:38:56
+patient85,Blood test,Lab,2017-05-01 10:53:47
+patient85,X-ray scan,Team 2,2017-05-03 15:18:16
+patient85,Second consult,Dr. Anna,2017-05-05 14:36:18
+patient85,Medicine,Pharmacy,2017-05-05 15:54:55
+patient85,Final consult,Dr. Ben,2017-05-10 12:07:20
+patient86,First consult,Dr. Anna,2017-05-02 12:31:11
+patient86,Physical test,Nurse Jesse,2017-05-02 13:34:17
+patient86,X-ray scan,Team 1,2017-05-08 13:49:03
+patient86,Blood test,Lab,2017-05-08 14:13:54
+patient86,Second consult,Dr. Anna,2017-05-10 11:18:45
+patient86,Medicine,Pharmacy,2017-05-10 14:30:01
+patient86,Final consult,Dr. Anna,2017-05-12 10:35:21
+patient87,First consult,Dr. Anna,2017-05-04 10:56:40
+patient87,Blood test,Lab,2017-05-04 11:57:08
+patient87,Physical test,Nurse Jesse,2017-05-05 13:24:09
+patient87,X-ray scan,Team 2,2017-05-11 09:09:09
+patient87,Second consult,Dr. Bob,2017-05-12 15:32:14
+patient87,Surgery,Dr. Charlie,2017-05-17 15:01:26
+patient87,Final consult,Dr. Ben,2017-05-19 16:11:27
+patient88,First consult,Dr. Anna,2017-05-04 16:00:47
+patient88,Physical test,Nurse Jesse,2017-05-08 11:05:40
+patient88,X-ray scan,Team 1,2017-05-08 11:36:34
+patient88,Blood test,Lab,2017-05-08 12:03:36
+patient88,Second consult,Dr. Anna,2017-05-09 10:24:43
+patient88,Medicine,Pharmacy,2017-05-09 12:32:53
+patient88,Final consult,Dr. Anna,2017-05-10 12:48:31
+patient89,First consult,Dr. Anna,2017-05-05 11:08:34
+patient89,X-ray scan,Team 1,2017-05-09 16:37:55
+patient89,Blood test,Lab,2017-05-09 17:23:35
+patient89,Physical test,Nurse Corey,2017-05-09 17:28:50
+patient89,Second consult,Dr. Bob,2017-05-10 14:32:15
+patient89,Medicine,Pharmacy,2017-05-11 08:38:50
+patient89,Final consult,Dr. Anna,2017-05-15 14:07:55
+patient90,First consult,Dr. Anna,2017-05-08 15:30:08
+patient90,Physical test,Nurse Jesse,2017-05-10 10:38:55
+patient90,Blood test,Lab,2017-05-10 10:41:06
+patient90,X-ray scan,Team 2,2017-05-10 11:55:41
+patient90,Second consult,Dr. Bob,2017-05-11 14:03:43
+patient90,Medicine,Pharmacy,2017-05-11 15:15:44
+patient90,Final consult,Dr. Ben,2017-05-11 16:34:28
+patient91,First consult,Dr. Anna,2017-05-09 12:43:12
+patient91,Blood test,Lab,2017-05-09 13:58:10
+patient91,Physical test,Nurse Jesse,2017-05-09 14:11:16
+patient91,X-ray scan,Team 1,2017-05-15 14:05:24
+patient91,Second consult,Dr. Anna,2017-05-18 11:20:32
+patient91,Medicine,Pharmacy,2017-05-18 14:40:24
+patient91,Final consult,Dr. Ben,2017-05-19 14:52:21
+patient92,First consult,Dr. Anna,2017-05-09 16:07:10
+patient92,Physical test,Nurse Jesse,2017-05-11 11:09:15
+patient92,X-ray scan,Team 2,2017-05-15 08:08:25
+patient92,Blood test,Lab,2017-05-15 10:11:50
+patient92,Second consult,Dr. Anna,2017-05-18 16:27:32
+patient92,Medicine,Pharmacy,2017-05-19 08:36:50
+patient92,Final consult,Dr. Anna,2017-05-22 15:37:59
+patient93,First consult,Dr. Anna,2017-05-10 16:26:26
+patient93,Physical test,Nurse Jesse,2017-05-11 12:28:17
+patient93,X-ray scan,Team 1,2017-05-12 08:51:36
+patient93,Blood test,Lab,2017-05-12 09:56:41
+patient93,Second consult,Dr. Bob,2017-05-17 14:06:14
+patient93,Medicine,Pharmacy,2017-05-17 15:25:14
+patient93,Final consult,Dr. Ben,2017-05-22 09:33:48
+patient94,First consult,Dr. Anna,2017-05-12 12:50:53
+patient94,Blood test,Lab,2017-05-12 13:51:31
+patient94,Physical test,Nurse Corey,2017-05-12 13:53:01
+patient94,X-ray scan,Team 1,2017-05-18 10:20:19
+patient94,Second consult,Dr. Anna,2017-05-22 08:36:27
+patient94,Surgery,Dr. Rudy,2017-05-26 12:50:41
+patient94,Final consult,Dr. Ben,2017-05-29 09:11:38
+patient95,First consult,Dr. Anna,2017-05-15 09:15:08
+patient95,Blood test,Lab,2017-05-15 10:22:25
+patient95,Physical test,Nurse Jesse,2017-05-15 14:36:18
+patient95,Second consult,Dr. Bob,2017-05-18 13:03:30
+patient95,Surgery,Dr. Rudy,2017-05-23 14:14:00
+patient95,Final consult,Dr. Anna,2017-05-26 10:19:34
+patient96,First consult,Dr. Bob,2017-05-15 10:31:45
+patient96,Blood test,Lab,2017-05-15 11:40:18
+patient96,Physical test,Nurse Corey,2017-05-16 14:49:01
+patient96,X-ray scan,Team 2,2017-05-18 14:46:55
+patient96,Second consult,Dr. Bob,2017-05-23 11:58:28
+patient96,Medicine,Pharmacy,2017-05-23 13:25:13
+patient96,Final consult,Dr. Anna,2017-05-24 16:38:21
+patient97,First consult,Dr. Bob,2017-05-17 08:44:01
+patient97,X-ray scan,Team 1,2017-05-17 16:12:44
+patient97,Physical test,Nurse Corey,2017-05-18 12:53:49
+patient97,Blood test,Lab,2017-05-18 13:55:10
+patient97,Second consult,Dr. Bob,2017-05-19 14:00:51
+patient97,Medicine,Pharmacy,2017-05-19 16:25:51
+patient97,Final consult,Dr. Anna,2017-05-22 14:37:56
+patient98,First consult,Dr. Anna,2017-05-17 10:56:48
+patient98,X-ray scan,Team 2,2017-05-23 13:59:10
+patient98,Physical test,Nurse Corey,2017-05-23 14:37:42
+patient98,Blood test,Lab,2017-05-23 15:46:01
+patient98,Second consult,Dr. Anna,2017-05-26 11:53:12
+patient98,Surgery,Dr. Alex,2017-05-30 14:13:17
+patient98,Final consult,Dr. Ben,2017-05-31 14:16:13
+patient99,First consult,Dr. Bob,2017-05-18 11:57:11
+patient99,Blood test,Lab,2017-05-18 13:13:44
+patient99,X-ray scan,Team 2,2017-05-25 11:03:27
+patient99,Physical test,Nurse Corey,2017-05-25 11:55:24
+patient99,Second consult,Dr. Anna,2017-05-29 15:12:39
+patient99,Medicine,Pharmacy,2017-05-29 16:17:13
+patient99,Final consult,Dr. Anna,2017-05-31 12:46:43
