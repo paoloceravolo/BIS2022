@@ -57,13 +57,15 @@ pm4py.view_petri_net(net, im, fm, format='png')
 #bpmn_graph = pm4py.discover_bpmn_inductive(filtered_log)
 #pm4py.view_bpmn(bpmn_graph)
 
-# Create a segmend by taking cases having CRP value at leat of 50
+# Let's practice with segmenting the event log 
+# Create a segment by taking cases having CRP value of at leat 50
 
-segmentCRP50 = filtered_log.groupby('case:concept:name').filter(lambda x: x['CRP'].min() >= 50.)
+cases = filtered_log[filtered_log["CRP"] > 50]["case:concept:name"].unique()
+segmentCRP50 = filtered_log[filtered_log["case:concept:name"].isin(cases)]
 
-#alternative code
-#cases = filtered_log[filtered_log["CRP"] > 50]["case:concept:name"].unique()
-#filtered_log = filtered_log[filtered_log["case:concept:name"].isin(cases)]
+#alternative code but wong code. It returns only the rows with values complying with the filter 
+#segmentCRP50 = filtered_log.groupby('case:concept:name').filter(lambda x: x['CRP'].min() >= 50.)
+
 
 
 print("Given {} total cases in the log we have {} cases that comply with the applied filter".format(len(log_df['case:concept:name'].unique()), len(segmentCRP50['case:concept:name'].unique())))
@@ -95,7 +97,102 @@ print("Given {} cases in the segment we have {} Return ER as end activity: {}. W
 print("Given {} total cases in the log we have {} Admission: {}".format(cases_log, cases_admission, round((cases_admission/cases_log), 3)))
 print("Given {} cases in the segment we have {} Admission: {}. With LIFT: {}".format(cases_segment, cases_admission_CRP50, round((cases_admission_CRP50/cases_segment), 3), ((cases_admission_CRP50/cases_segment)/(cases_admission/cases_log))))
 
-from scipy.stats import chisquare
+## Comparative Process Mining 
+# We want to compare the frequency of Admission to NC in different segments 
+# 1 the entire dataset, which is our reference population - consider it is skewed to admission (the cases in the event log are all connected to sepsis) 
+# 2 the cases where the CRP level is below 50 ug/L - the infection in these cases did not really trigger an unregulated response in the patient 
+# 3 the cases where the CRP level is between 50 and 100 ug/L - the infection in these cases is triggering an unregulated response in the patient
+# 5 the cases where the CRP level is over 100 ug/L - the infection in these cases is severe and is triggering an unregulated response in the patient
 
-#chisquare([(cases_end_activities/cases_log), (cases_end_activities_CRP50/cases_segment)])
-chisquare([(cases_admission/cases_log), (cases_admission_CRP50/cases_segment)])
+# The research question is: can we state we have a significant difference in the incidence of Admission in the three segments?
+# We expect to observe a significant difference because this is what the medical protocol is prescribing 
+# Cases not conformant with this prescription must be identified and analyzed
+
+# 1 Admissions to NC in the entire dataset
+
+#act = 'Admission NC'
+act = 'Return ER'
+
+#cases in the entire log
+cases_log = len(log_df['case:concept:name'].unique())
+
+#filter the event log based on how many activites Act are in it
+with_act = pm4py.filter_activities_rework(log_df, act, 1)
+cases_log_with_act = len(with_act['case:concept:name'].unique())
+
+# 2 Admissions to NC in segment 1
+
+#create segment 1
+# - with CRP <= 50 
+cases_s1 = filtered_log[filtered_log["CRP"] <= 50]["case:concept:name"].unique()
+segment1 = filtered_log[filtered_log["case:concept:name"].isin(cases_s1)]
+
+#filter the event log based on how many activites Act are in it
+with_act_s1 = pm4py.filter_activities_rework(segment1, act, 1)
+cases_s1_with_act = len(with_act_s1['case:concept:name'].unique())
+
+# 3 Admissions to NC in segment 2
+
+#create segment 2 
+# - with  50 < CRP <= 100 
+cases_lt100 = filtered_log[filtered_log["CRP"] <= 100]["case:concept:name"].unique()
+segment2 = filtered_log[filtered_log["case:concept:name"].isin(cases_lt100)]
+# remove the cases already in segment 1 
+segment2 = segment2[~segment2["case:concept:name"].isin(cases_s1)]
+
+cases_s2 = segment2['case:concept:name'].unique()
+
+
+#filter the event log based on how many activites Act are in it
+with_act_s2 = pm4py.filter_activities_rework(segment2, act, 1)
+cases_s2_with_act = len(with_act_s2['case:concept:name'].unique())
+
+# 4 Admissions to NC in segment 3
+
+#create segment 3 
+# - with  CRP > 100 
+cases_gt100  = filtered_log[filtered_log["CRP"] > 100]["case:concept:name"].unique()
+segment3 = filtered_log[filtered_log["case:concept:name"].isin(cases_gt100 )]
+# remove the cases already in segment 1 and sgment 2
+segment3 = segment3[~segment3["case:concept:name"].isin(cases_s1)]
+segment3 = segment3[~segment3["case:concept:name"].isin(cases_s2)]
+
+cases_s3 = segment3['case:concept:name'].unique()
+
+#filter the event log based on how many activites Act are in it
+with_act_s3 = pm4py.filter_activities_rework(segment3, act, 1)
+cases_s3_with_act = len(with_act_s3['case:concept:name'].unique())
+
+
+print(cases_log, cases_log_with_act, len(cases_s1), cases_s1_with_act, len(cases_s2), cases_s2_with_act, len(cases_s3), cases_s3_with_act)
+
+# Chis square test
+#by comparing the observed and expected values we obtain the probability that the null hypothesis is true
+
+from scipy.stats import chi2_contingency
+ 
+# defining the table
+data = [ [cases_log_with_act, (cases_log - cases_log_with_act)], [ cases_s1_with_act, ( len(cases_s1) - cases_s1_with_act)], [ cases_s2_with_act, ( len(cases_s2) - cases_s2_with_act)], [ cases_s3_with_act, ( len(cases_s3) - cases_s3_with_act)]]
+stat, p, dof, expected = chi2_contingency(data)
+ 
+# interpret p-value
+alpha = 0.05
+print("p value is " + str(p))
+if p <= alpha:
+    print('Dependent (reject H0)')
+else:
+    print('Independent (H0 holds true)')
+
+# Lift measure
+#we verify if the probability of observing two events separately with the probability of observing them in together 
+
+# Lift segment 1 base don Act 
+#segment1
+
+p_s_with_act = cases_s2_with_act/cases_log
+p_with_act = cases_log_with_act/cases_log
+p_s = len(cases_s2)/cases_log
+
+lift_segment2 = p_s_with_act/(p_with_act * p_s)
+
+print(lift_segment2)
